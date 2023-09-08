@@ -215,5 +215,6 @@ section div {
     justify-content: space-between;
 }
 div{
-    text-align: justify;
+    text-justify: newspaper;
+    hyphens: auto;
 }

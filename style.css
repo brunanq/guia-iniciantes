@@ -56,14 +56,13 @@ body{
 }
 main{
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 30px;
 }
 main a{
     text-decoration: none;
     color: blue;
     font-weight: bold;
-    margin-left: 10px;
 }
 main a:hover{
     color: rgb(0, 0, 175);
@@ -103,23 +102,21 @@ img{
     text-align: center;
 }
 #extensao{
-    display: flow-root;
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#golive{
-    display: flow-root;
-    width: 800px;
+#extensao div{
+    width: 50%;
 }
-#golive img{
-    float: right;
-    margin: 20px;
-}
-#extensao img{
-    float: left;
-    margin: 20px;
+.liveserver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 p{
-    margin: 10px;
+    word-spacing: 1px;
+    margin: 5px 0 10px 0;
 }
 dl{
     border: 1px solid;
@@ -137,3 +134,8 @@ dt{
 dd{
     margin-left: 10px;
 }
+section{
+    display: flex;
+    justify-content: center;
+}
+

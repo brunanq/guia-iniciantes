@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Source+Code+Pro&family=Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -38,10 +35,16 @@
                 <h2>Instalar o Git na sua máquina</h2>
                 <p>Pesquise sobre como instalar o git no sistema operacional que você usa. Um  tutorial no YouTube pode ajudar muito. Mas em geral, você só precisa seguir o passo a passo que já vem no site do Git:
                 </p>
-
-                <a href="https://git-scm.com/downloads">Clique aqui para acessar a página de download do Git!</a>
             </div>
+            <div class="gif">
+                <img src="gifs/gitOS.gif" alt="name">
+            </div>  
         </section>
+        <div>
+            <a href="https://git-scm.com/downloads">Clique aqui para acessar a página de download do Git!</a>
+        </div>
+            
+
         <hr>
         <section id="using-git">
             <div class="container">
@@ -73,11 +76,20 @@
                 <h4>Você não precisa obrigatoriamente de um editor de código. Pode editar o documento no bloco de notas ou no próprio terminal usando o VIM, mas editores de código facilitam a escrita.</h4>
 
                 <p> Procure sobre como instalar o VS Code no seu <strong>sistema operacional</strong>
-                <br>
+            </div>
+            <div>
+                <img src="gifs/vscodeOS.gif" alt="vscode">
+            </div>
+        </section>
+        <section class="vscode">
+            <div class="container">
                 <p>Com ele instalado, você pode criar arquivos para seu projeto</p>
                 <p> Crie um de arquivo de teste pelo próprio VS Code, e nomeie ele de "teste.html".</p>
                 <p>Escreva "html" no seu arquivo e você verá que o VS Code te sugere algumas opções de autocomplete. Selecione o HTML 5.</p>
-                <div id="img-html5"><img src="imagens/html5.png" alt=""></div>
+            </div>
+            <div id="img-html5"><img src="imagens/html5.png" alt=""></div>
+        </section>
+            <div>
                 <p>Agora você tem a estrutura completa de um HTML.</p>
                 <p>Escreva:</p>
                 <blockquote>&lt;h1> Olá, mundo! &lt;/h1></blockquote>
@@ -87,20 +99,19 @@
                 <p>Você deve estar vendo seu site </p>
                 <p>Porém, essa visualização não atualiza automaticamente toda vez que você mexe documento.</p>
                 <p>Para isso, precisamos adicionar uma <strong>extensão</strong> ao seu editor: o Live Server</p> 
-                <div id="extensao">
-                    
-                    <div id="img-extension"><img src="imagens/extensions.png" alt=""></div>
-                    <br><br><br><br>
-                    <p>Na parte mais à direita do VS Code, vá na opção Extensions, pesquise por Live Server e instale.</p>
+            </div>
+        <section>
+            <div id="extensao">
+                <div class="liveserver">
+                    <div><p>Na parte mais à direita do VS Code, vá na opção Extensions, pesquise por Live Server e instale.</p></div>
+                    <div><img src="imagens/extensions.png" alt=""></div>
                 </div>
                 <div id="golive">
-                    <div id="img-golive"> <img src="imagens/golive.png" alt=""></p></div>
-                    <p>Para usá-lo, no canto inferior direito do VS Code, vai ter a opção "Go Live". Assim que você clicar nela, será aberta uma aba do seu navegador com seu site renderizado!</p>
+                    <div class="golive"></div>
+                        <div><p>Para usá-lo, no canto inferior direito do VS Code, vai ter a opção "Go Live". Assim que você clicar nela, será aberta uma aba do seu navegador com seu site renderizado!</p></div>
+                    <div><img src="imagens/golive.png" alt=""></div>
+                    </p>
                 </div>
-                    
-                    
-                
-                </p> 
             </div>
         </section>
         <hr>
@@ -129,32 +140,35 @@
         <section id="comandos">
             <div class="container">
                 <h2>Comandos Git e terminal</h2>
-                <table>
-                    <tr>
-                    <th>clone</th>
-                    <td>clona os arquivos do repositório</td>
-                    </tr>
-                    <tr>
-                        <th>status</th>
-                        <td>mostra as condições dos arquivos do seu diretório</td>
-                    </tr>
-                    <tr>
-                        <th>add</th>
-                        <td>leva as alterações que você fez pra área de staging</td>
-                    </tr>
-                    <tr>
-                        <th>commit</th>
-                        <td>salva as mudanças no repositório</td>
-                    </tr>
-                    <tr>
-                        <th>push</th>
-                        <td>atualiza o repositório remoto com as mudanças feitas</td>
-                    </tr>
-                </table>
+                <div class="table">
+                    <table>
+                        <tr>
+                        <th>clone</th>
+                        <td>clona os arquivos do repositório</td>
+                        </tr>
+                        <tr>
+                            <th>status</th>
+                            <td>mostra as condições dos arquivos do seu diretório</td>
+                        </tr>
+                        <tr>
+                            <th>add</th>
+                            <td>leva as alterações que você fez pra área de staging</td>
+                        </tr>
+                        <tr>
+                            <th>commit</th>
+                            <td>salva as mudanças no repositório</td>
+                        </tr>
+                        <tr>
+                            <th>push</th>
+                            <td>atualiza o repositório remoto com as mudanças feitas</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </section>
         <hr>
         <section id="dicas">
+            <div>
             <h2>Algumas dicas</h2>
             <br>
             <h3>Aprenda a pesquisar</h3>
@@ -176,9 +190,11 @@
                 <dd>Evite commitar os arquivos se você fez apenas uma parte da alteração e ainda está desenvolvendo, ou sem antes checar se está tudo ok com o seu trabalho.</dd>
                 <dt>Não termine o commit com um ponto final</dt>
             </dl>
+        </div>
         </section>
         <hr>
         <section id="links">
+            <div>
             <h2>Links úteis</h2>
             <p>Aqui estão alguns links legais (todos grátis) para quem é iniciante:</p>
 
@@ -189,7 +205,7 @@
                <li><a href="https://www.youtube.com/watch?v=Y7hs3vAcVt0">Tudo o que você precisa saber sobre Markdown | YouTube</a></li>
                <li><a href="https://www.youtube.com/watch?v=8dWL3wF_OMw">JavaScript full course (em inglês, com opção de legenda em português) | YouTube</a></li>
             </ul>
-
+        </div>
         </section>
     </main>
 </body>

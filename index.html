@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Source+Code+Pro&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <title>Guia para iniciantes</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo"><a href="#">&lt;/></a></div>
+                <ul class="navul">
+                    <li><a href="#install-git">Instalar o Git</a></li>
+                    <li><a href="#using-git">Trabalhando com Git</a></li>
+                    <li><a href="#using-vscode">Usando o VS Code</a></li>
+                    <li><a href="#commit">Envio de alterações</a></li>
+                    <li><a href="#comandos">Comandos Git</a></li>
+                    <li><a href="#dicas">Algumas dicas</a></li>
+                    <li><a href="#links">Links úteis</a></li>
+                </ul>     
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <h1>Guia para iniciantes</h1>
+
+        <section id="install-git">
+            <div class="container">
+                <h2>Instalar o Git na sua máquina</h2>
+                <p>Pesquise sobre como instalar o git no sistema operacional que você usa. Um  tutorial no YouTube pode ajudar muito. Mas em geral, você só precisa seguir o passo a passo que já vem no site do Git:
+                </p>
+
+                <a href="https://git-scm.com/downloads">Clique aqui para acessar a página de download do Git!</a>
+            </div>
+        </section>
+        <hr>
+        <section id="using-git">
+            <div class="container">
+                <h2>Trabalhando em seu projeto com o Git</h2>
+                <p>Agora você já pode começar a fazer o controle das versões do projeto usando Git. 
+                A primeira coisa a ser feita é entrar no repositório do projeto e "copiar" os arquivos pra sua máquina.</p>
+                <h3>Copie o endereço do repositório</h3>
+                <div id="img-clone"><img src="imagens/clone.png" alt="url para clone de repositorio"></div>
+                
+                <p>Em seguida entre no seu terminal e escreva</p>
+                <blockquote>git clone https://github.com/SeuNomeDeUsuario/SeuRepositorio.git</blockquote>
+                <br>
+                <p>Depois de feito isso, haverá uma pasta no seu computador com os arquivos do repositório. Para ter certeza disso, escreva "ls"no seu terminal. Esse comando vai listar todos os arquivos no diretório em que você está.</p>
+                <br>
+                <p>Entre na pasta do repositório pelo terminal</p>
+                <blockquote>
+                    cd NomeDoRepositorio
+                </blockquote>
+                <p>
+                Se o nome for muito comprido, você pode escrever as primeiras letras e apertar TAB, e o terminal completa pra você.</p>
+                <p>Agora você pode fazer as alterações, e não precisa de um editor de código pra isso, qualquer alteração é válida, mesmo se for feita no bloco de notas.</p>
+            </div>
+        </section>
+        <hr>
+        <section id="using-vscode">
+            <div class="container">
+                <h2>Usando o VS Code</h2>
+                <br>
+                <h4>Você não precisa obrigatoriamente de um editor de código. Pode editar o documento no bloco de notas ou no próprio terminal usando o VIM, mas editores de código facilitam a escrita.</h4>
+
+                <p> Procure sobre como instalar o VS Code no seu <strong>sistema operacional</strong>
+                <br>
+                <p>Com ele instalado, você pode criar arquivos para seu projeto</p>
+                <p> Crie um de arquivo de teste pelo próprio VS Code, e nomeie ele de "teste.html".</p>
+                <p>Escreva "html" no seu arquivo e você verá que o VS Code te sugere algumas opções de autocomplete. Selecione o HTML 5.</p>
+                <div id="img-html5"><img src="imagens/html5.png" alt=""></div>
+                <p>Agora você tem a estrutura completa de um HTML.</p>
+                <p>Escreva:</p>
+                <blockquote>&lt;h1> Olá, mundo! &lt;/h1></blockquote>
+                <br>
+                <p> No canto esquerdo do seu VS Code, onde está seu arquivo HTML, clique nele com o botão direito do mouse e selecione <strong>"Copy Path"</strong></p>
+                <p>Abra seu navegador e cole o path no espaço da URL.</p>
+                <p>Você deve estar vendo seu site </p>
+                <p>Porém, essa visualização não atualiza automaticamente toda vez que você mexe documento.</p>
+                <p>Para isso, precisamos adicionar uma <strong>extensão</strong> ao seu editor: o Live Server</p> 
+                <div id="extensao">
+                    
+                    <div id="img-extension"><img src="imagens/extensions.png" alt=""></div>
+                    <br><br><br><br>
+                    <p>Na parte mais à direita do VS Code, vá na opção Extensions, pesquise por Live Server e instale.</p>
+                </div>
+                <div id="golive">
+                    <div id="img-golive"> <img src="imagens/golive.png" alt=""></p></div>
+                    <p>Para usá-lo, no canto inferior direito do VS Code, vai ter a opção "Go Live". Assim que você clicar nela, será aberta uma aba do seu navegador com seu site renderizado!</p>
+                </div>
+                    
+                    
+                
+                </p> 
+            </div>
+        </section>
+        <hr>
+        <section id="commit">
+            <div class="container">
+                <h2>Enviando suas alterações para o repositório remoto</h2>
+                <p>Você já fez as alterações no documento e agora vai enviar para o repositório no Github. 
+                Para isso, volte ao terminal, na pasta do projeto, e dê os seguintes comandos:
+
+                <blockquote>
+                    git status <br>
+                    git add . <br>
+                    git commit -m "seu comentario aqui" <br>
+                    git push
+                </blockquote>
+                </p>
+                <p>Se não lembra como entrar na pasta do projeto, lembre-se de digitar "ls" no seu terminal. Assim você vai saber em qual diretório está.</p>
+                <p>"Diretório" é um nome pra "pasta". Se estiver na pasta errada, pode voltar digitando "cd .." (dois pontinhos mesmo) no terminal, e "ls" pra ver se está na pasta certa.</p>
+                <p>Novamente: quando a pasta do projeto aparecer, entre nela digitando:</p>
+                <blockquote>
+                    cd NomeDoRepositorio
+                </blockquote>
+            </div>
+        </section>
+        <hr>
+        <section id="comandos">
+            <div class="container">
+                <h2>Comandos Git e terminal</h2>
+                <table>
+                    <tr>
+                    <th>clone</th>
+                    <td>clona os arquivos do repositório</td>
+                    </tr>
+                    <tr>
+                        <th>status</th>
+                        <td>mostra as condições dos arquivos do seu diretório</td>
+                    </tr>
+                    <tr>
+                        <th>add</th>
+                        <td>leva as alterações que você fez pra área de staging</td>
+                    </tr>
+                    <tr>
+                        <th>commit</th>
+                        <td>salva as mudanças no repositório</td>
+                    </tr>
+                    <tr>
+                        <th>push</th>
+                        <td>atualiza o repositório remoto com as mudanças feitas</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <section id="dicas">
+            <h2>Algumas dicas</h2>
+            <br>
+            <h3>Aprenda a pesquisar</h3>
+            <p>Grande parte da rotina de um desenvolvedor consiste em buscar uma solução pro seu problema. Diferentemente de outras áreas, você não precisa gravar comandos, termos, fórmulas etc. </p>
+            <p>O principal é aprender a lógica, e as outras coisas acompanham. Algumas coisas você vai acabar decorando pela repetição, mas até lá abuse do Google. Saber como pesquisar é muito importante.</p>
+            <p>Eventualmente você vai tentar executar um comando no terminal e receber uma mensagem de erro. <strong>Leia</strong> essa mensagem, o terminal te conta exatamente o que houve de errado. Caso você não entenda, pesquise sobre aquele problema! Você não precisa resolver tudo sozinho, algumas coisas não são triviais, mas dá pra resolver sim bastante coisa com curiosidade e iniciativa.</p>
+
+            <h3>Boas práticas Git</h3>
+            <p>Quando você fizer uma alteração no documento a ser commitado, comente sobre a alteração feita, se atendo aos seguintes aspectos:</p>
+
+            <dl>
+                <dt>Especifique a alteração:</dt>
+                <dd>Todos os membros da equipe devem saber do que se trata aquele commit, então evite comentários vagos e opte por termos mais precisos sobre o que você fez. Por exemplo, se você fez uma alteração no estilo de todos os &lt;h1>, escreva "altera estilo h1"; se você exclui um link da barra de navegação, comente "exclui nomeDoLink da navegação". E por aí vai.
+                </dd>
+
+                <dt>Não escreva muito:</dt>
+                <dd>Seu commit deve ser breve, não faça muitas descrições sobre a sua alteração. O ideal é que você coloque um verbo no imperativo + o objeto afetado.</dd>
+                <dt>Não faça commit se não tiver tudo certo:</dt>
+                <dd>Evite commitar os arquivos se você fez apenas uma parte da alteração e ainda está desenvolvendo, ou sem antes checar se está tudo ok com o seu trabalho.</dd>
+                <dt>Não termine o commit com um ponto final</dt>
+            </dl>
+        </section>
+        <hr>
+        <section id="links">
+            <h2>Links úteis</h2>
+            <p>Aqui estão alguns links legais (todos grátis) para quem é iniciante:</p>
+
+            <ul>
+               <li><a href="https://www.cursoemvideo.com/curso/curso-de-git-e-github">Curso de Git | Curso em Vídeo</a></li>
+               <li><a href="https://www.cursoemvideo.com/curso/curso-de-algoritmo/">Curso de Algoritmos | Curso em Vídeo</a></li>
+               <li><a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw&t">HTML & CSS full course (em inglês, com opção de legenda em português) | YouTube</a></li>
+               <li><a href="https://www.youtube.com/watch?v=Y7hs3vAcVt0">Tudo o que você precisa saber sobre Markdown | YouTube</a></li>
+               <li><a href="https://www.youtube.com/watch?v=8dWL3wF_OMw">JavaScript full course (em inglês, com opção de legenda em português) | YouTube</a></li>
+            </ul>
+
+        </section>
+    </main>
+</body>
+</html>

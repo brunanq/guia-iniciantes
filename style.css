@@ -1,0 +1,137 @@
+* {
+    font-family: Montserrat;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navdiv {
+    background-color: rgb(36, 35, 35);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+.logo a{
+    text-decoration: none;
+    color: rgb(8, 236, 8);
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 75px;
+}
+
+.navul li{
+    display: inline-block;
+    justify-content: space-between;
+    font-family: Ubuntu Mono;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.navul li a{
+    text-decoration: none;
+    font-family: Ubuntu Mono;
+    color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-radius: 15px;
+    border-color: rgb(8, 236, 8);
+    padding: 6px;
+    background-color: rgb(43, 43, 43);
+}
+
+.navul li a:hover{
+    color: rgb(8, 236, 8);
+}
+hr{
+    border: none;
+    border-top: 8px dotted rgb(122, 122, 122);
+    margin: auto;
+    width: 10%;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.945);
+    align-items: center;
+    color: white;
+   
+}
+main{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+main a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+main a:hover{
+    color: rgb(0, 0, 175);
+}
+.container{
+    width: 98%;
+    margin: 20px 0 40px 0;
+}
+h1{
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    padding: 8px;
+    margin: 10px 0 20px;
+}
+blockquote {
+    font-family: Ubuntu Mono;
+    background-color: rgb(53, 53, 53);
+    color: rgb(9, 238, 9);
+    padding: 10px;
+    max-width: fit-content;
+    margin-left: 20px;
+}
+img{
+    border-radius: 25px;
+    max-height: 250px;
+    border: 1px solid white;
+    margin: 20px;
+}
+#img-clone{
+    text-align: center;
+}
+#img-html5{
+    text-align: center;
+}
+#extensao{
+    display: flow-root;
+    width: 500px;
+}
+#golive{
+    display: flow-root;
+    width: 800px;
+}
+#golive img{
+    float: right;
+    margin: 20px;
+}
+#extensao img{
+    float: left;
+    margin: 20px;
+}
+p{
+    margin: 10px;
+}
+dl{
+    border: 1px solid;
+    width: 70%;
+    margin: 20px auto 30px auto;
+    
+}
+dl *{
+    font-family: Ubuntu Mono;
+}
+dt{
+    font-weight: bold;
+    margin: 5px;
+}
+dd{
+    margin-left: 10px;
+}

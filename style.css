@@ -43,8 +43,8 @@
 }
 hr{
     border: none;
-    border-top: 8px dotted rgb(122, 122, 122);
-    margin: auto;
+    border-top: 6px dotted rgb(122, 122, 122);
+    margin: 20px auto;
     width: 10%;
 }
 
@@ -52,20 +52,17 @@ body{
     background-color: rgba(0, 0, 0, 0.945);
     align-items: center;
     color: white;
-   
 }
 main{
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 30px;
+    margin: 30px auto 30px auto;
 }
 main a{
     text-decoration: none;
-    color: blue;
+    color: rgb(55, 206, 206);
     font-weight: bold;
 }
 main a:hover{
-    color: rgb(0, 0, 175);
+    color: rgb(163, 243, 243);
 }
 .container{
     width: 98%;
@@ -117,6 +114,8 @@ img{
 p{
     word-spacing: 1px;
     margin: 5px 0 10px 0;
+    width: 80%;
+    font-size: 14pt;
 }
 dl{
     border: 1px solid;
@@ -126,16 +125,41 @@ dl{
 }
 dl *{
     font-family: Ubuntu Mono;
+    font-size: 13pt;
 }
 dt{
     font-weight: bold;
     margin: 5px;
+    font-size: 16pt;
 }
 dd{
     margin-left: 10px;
 }
 section{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+section.full>div{
+    width: fit-content;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div#clone{
+    text-align: center;
 }
 
+#content{
+    border: 2px solid pink;
+}
+section div {
+    width: 49%;
+    justify-content: space-between;
+}
+div{
+    text-align: justify;
+}

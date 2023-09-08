@@ -40,56 +40,64 @@
                 <img src="gifs/gitOS.gif" alt="name">
             </div>  
         </section>
-        <div>
+        <section> <div>
             <a href="https://git-scm.com/downloads">Clique aqui para acessar a página de download do Git!</a>
         </div>
-            
+            </section>
+       
 
         <hr>
         <section id="using-git">
-            <div class="container">
-                <h2>Trabalhando em seu projeto com o Git</h2>
-                <p>Agora você já pode começar a fazer o controle das versões do projeto usando Git. 
-                A primeira coisa a ser feita é entrar no repositório do projeto e "copiar" os arquivos pra sua máquina.</p>
-                <h3>Copie o endereço do repositório</h3>
-                <div id="img-clone"><img src="imagens/clone.png" alt="url para clone de repositorio"></div>
-                
+                <div>
+                    <h2>Trabalhando em seu projeto com o Git</h2>
+                    <p>Agora você já pode começar a fazer o controle das versões do projeto usando Git. A primeira coisa a ser feita é entrar no repositório do projeto e "copiar" os arquivos pra sua máquina.</p> 
+                </div>
+                <div id="clone">
+                    <h3>Copie o endereço do repositório</h3>
+                    <img src="imagens/clone.png" alt="url para clone de repositorio">
+                </div>
+        </section>
+        <section class="full">
+            <div>
                 <p>Em seguida entre no seu terminal e escreva</p>
                 <blockquote>git clone https://github.com/SeuNomeDeUsuario/SeuRepositorio.git</blockquote>
                 <br>
-                <p>Depois de feito isso, haverá uma pasta no seu computador com os arquivos do repositório. Para ter certeza disso, escreva "ls"no seu terminal. Esse comando vai listar todos os arquivos no diretório em que você está.</p>
+                <p>Depois de feito isso, haverá uma pasta no seu computador com os arquivos do repositório. </p>
+                <p>Para ter certeza disso, escreva "ls"no seu terminal. Esse comando vai listar todos os arquivos no diretório em que você está.</p>
                 <br>
                 <p>Entre na pasta do repositório pelo terminal</p>
                 <blockquote>
                     cd NomeDoRepositorio
                 </blockquote>
+                <br>
                 <p>
                 Se o nome for muito comprido, você pode escrever as primeiras letras e apertar TAB, e o terminal completa pra você.</p>
                 <p>Agora você pode fazer as alterações, e não precisa de um editor de código pra isso, qualquer alteração é válida, mesmo se for feita no bloco de notas.</p>
             </div>
         </section>
+                
         <hr>
         <section id="using-vscode">
-            <div class="container">
+            <div>
                 <h2>Usando o VS Code</h2>
                 <br>
                 <h4>Você não precisa obrigatoriamente de um editor de código. Pode editar o documento no bloco de notas ou no próprio terminal usando o VIM, mas editores de código facilitam a escrita.</h4>
-
                 <p> Procure sobre como instalar o VS Code no seu <strong>sistema operacional</strong>
             </div>
             <div>
                 <img src="gifs/vscodeOS.gif" alt="vscode">
             </div>
         </section>
-        <section class="vscode">
-            <div class="container">
+        <section id="vscode">
+            <div>
                 <p>Com ele instalado, você pode criar arquivos para seu projeto</p>
                 <p> Crie um de arquivo de teste pelo próprio VS Code, e nomeie ele de "teste.html".</p>
                 <p>Escreva "html" no seu arquivo e você verá que o VS Code te sugere algumas opções de autocomplete. Selecione o HTML 5.</p>
             </div>
             <div id="img-html5"><img src="imagens/html5.png" alt=""></div>
         </section>
-            <div>
+        <section class="full">
+            <div>                
                 <p>Agora você tem a estrutura completa de um HTML.</p>
                 <p>Escreva:</p>
                 <blockquote>&lt;h1> Olá, mundo! &lt;/h1></blockquote>
@@ -100,17 +108,22 @@
                 <p>Porém, essa visualização não atualiza automaticamente toda vez que você mexe documento.</p>
                 <p>Para isso, precisamos adicionar uma <strong>extensão</strong> ao seu editor: o Live Server</p> 
             </div>
-        <section>
-            <div id="extensao">
-                <div class="liveserver">
-                    <div><p>Na parte mais à direita do VS Code, vá na opção Extensions, pesquise por Live Server e instale.</p></div>
-                    <div><img src="imagens/extensions.png" alt=""></div>
+        </section>
+        <section class="extensions">
+            <div class="content">
+                   <div>
+                    <p>Na parte mais à direita do VS Code, vá na opção Extensions, pesquise por Live Server e instale.</p>
                 </div>
-                <div id="golive">
-                    <div class="golive"></div>
-                        <div><p>Para usá-lo, no canto inferior direito do VS Code, vai ter a opção "Go Live". Assim que você clicar nela, será aberta uma aba do seu navegador com seu site renderizado!</p></div>
-                    <div><img src="imagens/golive.png" alt=""></div>
-                    </p>
+                <div>
+                    <img src="imagens/extensions.png" alt="">
+                </div> 
+            </div>
+            <div class="content">
+                <div>
+                    <p>Para usá-lo, no canto inferior direito do VS Code, vai ter a opção "Go Live". Assim que você clicar nela, será aberta uma aba do seu navegador com seu site renderizado!</p>
+                </div>
+                <div>
+                    <img src="imagens/golive.png" alt="">
                 </div>
             </div>
         </section>
@@ -138,13 +151,12 @@
         </section>
         <hr>
         <section id="comandos">
-            <div class="container">
+            <div>
                 <h2>Comandos Git e terminal</h2>
-                <div class="table">
-                    <table>
+                <table>
                         <tr>
                         <th>clone</th>
-                        <td>clona os arquivos do repositório</td>
+                        <td>clona o repositório</td>
                         </tr>
                         <tr>
                             <th>status</th>
@@ -163,11 +175,12 @@
                             <td>atualiza o repositório remoto com as mudanças feitas</td>
                         </tr>
                     </table>
-                </div>
             </div>
+                
+                    
         </section>
         <hr>
-        <section id="dicas">
+        <section class="full" id="dicas">
             <div>
             <h2>Algumas dicas</h2>
             <br>
@@ -193,7 +206,7 @@
         </div>
         </section>
         <hr>
-        <section id="links">
+        <section class="full" id="links">
             <div>
             <h2>Links úteis</h2>
             <p>Aqui estão alguns links legais (todos grátis) para quem é iniciante:</p>
